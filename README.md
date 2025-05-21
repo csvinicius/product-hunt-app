@@ -1,6 +1,6 @@
 # Product Hunt App
 
-A simple and modern web application that displays the most popular and most recent posts from [Product Hunt](https://www.producthunt.com/). Built with ReactJS, TypeScript, and Styled Components, this project was developed as part of a technical challenge.
+A simple and modern web application that displays the most popular and most recent posts from [Product Hunt](https://www.producthunt.com/). Built with ReactJS, TypeScript, and Styled Components.
 
 ## ✨ Features
 
