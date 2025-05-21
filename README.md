@@ -34,19 +34,14 @@ This project follows a modular and scalable folder structure using a **Feature-b
 
 ```
 src/
-├── api/                     # Axios setup and external API configs
-├── assets/                 # Static assets like images
-├── components/             # Shared UI components (e.g., Loader, ErrorMessage)
+├── api/                    # Axios setup and external API configs
+├── components/             # Shared UI components
 ├── features/
-│   └── posts/
-│       ├── components/     # Domain-specific components (PopularPosts, RecentPosts, etc.)
-│       ├── types.ts        # TypeScript types
-│       ├── queries.ts      # GraphQL queries
-│       └── usePosts.ts     # Custom hook to fetch posts
+│   └── posts/              # Posts logic (hooks, queries, types)
 ├── styles/                 # Global styled-components and theme setup
-├── App.tsx                 # Main application component
-├── main.tsx                # Vite entry file
-└── tests/                  # Unit test files
+├── pages/                  # Main page component
+├── App.tsx
+├── main.tsx                
 ```
 
 ## ⚙️ Setup & Environment
