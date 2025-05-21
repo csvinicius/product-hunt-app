@@ -20,19 +20,28 @@ const Image = styled.img`
 
 const Content = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
   gap: 4px;
 `;
 
 const PostName = styled.h4`
   margin: 0;
   font-size: 14px;
-  font-weight: lighter;
+  font-weight: 400;
 `;
 
 const PostTagline = styled.span`
-  font-size: 10px;
+  font-size: 12px;
+`;
+
+const PostVotes = styled.span`
+  color: #595959;
+  font-size: 12px;
+  font-weight: 900;
+  text-align: center;
 `;
 
 export function PostCard({ post }: { post: Post }) {
@@ -40,9 +49,14 @@ export function PostCard({ post }: { post: Post }) {
     <Card>
       <Image src={post.thumbnail.url} alt={post.name} />
       <Content>
-        <PostName>{post.name}</PostName>
-        <PostTagline>{post.tagline}</PostTagline>
-        <span>{post.votesCount} votes</span>
+        <div>
+          <PostName>{post.name}</PostName>
+          <PostTagline>{post.tagline}</PostTagline>
+        </div>
+        <PostVotes>
+          {post.votesCount} <br />
+          Votes
+        </PostVotes>
       </Content>
     </Card>
   );
